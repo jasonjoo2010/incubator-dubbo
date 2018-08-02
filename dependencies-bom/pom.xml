@@ -10,7 +10,7 @@
 
     <groupId>com.alibaba</groupId>
     <artifactId>dubbo-dependencies-bom</artifactId>
-    <version>2.6.3-SNAPSHOT</version>
+    <version>2.6.3-dayima</version>
     <packaging>pom</packaging>
 
     <name>dubbo-dependencies-bom</name>
@@ -395,5 +395,17 @@
             </build>
         </profile>
     </profiles>
+<distributionManagement>
+        <repository>
+                <id>nexus-releases</id>
+                <name>Releases name</name>
+                <url>http://nexus.dayima.org/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+                <id>nexus-snapshots</id>
+                <name>snapshots name</name>
+                <url>http://nexus.dayima.org/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+</distributionManagement>
 
 </project>
